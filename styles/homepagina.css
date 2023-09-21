@@ -1,0 +1,51 @@
+section:first-of-type {
+  position: relative;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  overflow: hidden;
+}
+
+h3 {
+  position: absolute; 
+  padding: 3em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 0; 
+}
+
+section article:first-of-type, 
+section article:last-of-type {grid-column-start:1; 
+  grid-column-end:-1; 
+}
+
+article {
+  text-align: center;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.7s all ease-in-out;
+}
+
+article img:hover {
+  transform: scale(1.02); /* Increase the scale factor for the desired zoom level */
+}
+
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+  h3 {
+    padding: 1em;
+  }
+}
