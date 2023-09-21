@@ -90,7 +90,8 @@ Surface plane
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed: De header, footer etc dingen die ik al ken van vorig jaar.
+  dit was lastig: De stof van de les toepassen op mijn eigen website, zoals de juiste grid structuur.
 
 
   ### Agenda voor meeting
@@ -102,12 +103,14 @@ Surface plane
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+- Mag je twee ul's in je header
+- Moet de navbar hetzelfde
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - punt 1 - In mijn geval is het beter om twee nav's te hebben.
+  - punt 2 - Ja, navbar moet hetzelfde.
   - nog een punt
   - ...
 
@@ -123,8 +126,10 @@ Surface plane
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  hier dit ging goed: grid, kleine details zoals de zoom in bij de hover op de images
+  & dit was lastig: the animatie bij de nav bar, omdat 1 li item anders was dan de rest. 
+<img src="">
+<img src="">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
