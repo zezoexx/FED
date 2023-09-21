@@ -22,7 +22,7 @@ Zoë Sedney
 Blauw
 
   #### Je focus:
-Surface plane
+Responsive design
  
 </details>
 
