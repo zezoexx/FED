@@ -128,8 +128,8 @@ Responsive design
   ### Stand van zaken
   hier dit ging goed: grid, kleine details zoals de zoom in bij de hover op de images
   & dit was lastig: the animatie bij de nav bar, omdat 1 li item anders was dan de rest. 
-<img src="">
-<img src="">
+<img src="readme-images/Screenshot 2023-09-21 154243.png">
+<img src="readme-images/Screenshot 2023-09-21 154344.png">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
