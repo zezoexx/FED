@@ -139,6 +139,40 @@ Responsive design
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+  
+Mijn vragen:
+- is het handig om flexbox te gebruiken of is left and bottom beter
+- mag padding gebruikt worden
+- wanneer ik hover zoom heb op een image, hoe zorg ik dat die tekst hetzelfde blijft 
+- @fontface werkt niet?
+- hoeveel javascript moet je hebben
+- is vijf witregels in css een must of mag je het zelf weten
+- wanneer ik position relative en absolute gebruik op tekst komt de tekst in elkaar, wat is een goede manier om dit te fixen
+
+
+Lynn: 
+- Hoe doe je een searchbalk pop up
+- Waarom werkt flexbox niet meer wanneer ik position relative gebruik
+- Mag top/bottom etc. wel
+- Hoe werkt het met de font
+- Hoe krijg je een responsive slideshow van images
+- Mag je bij tekst die over images staan left en right etc. gebruiken
+- Hoe krijg ik de titels korter (om vormgeving redenen) wanneer het scherm kleiner wordt Sent from my iPhone
+
+
+Elisa:
+- Ik heb nu div’s gezet om de verschillende “kopjes” in de footer, mag dat?
+Of moet ik er sections van maken?
+- Moet ik in de footer na de section ook een h2 zetten met een titel?
+-Hoe krijg ik aan de linkerkant van de scherm geen border? Maar tussen de afbeeldingen wel
+- Hoe verander ik de style wanneer ik op het invulveld van een forum klik.
+- Hoe krijg ik in de footer de laatste afbeelding eronder wanneer het scherm kleiner wordt 
+- Hoe zorg ik ervoor dat de tekst in de campaign header ook responsive wordt
+- Hoe zorg ik ervoor dat ik allereerst het plaatje zie en dan pas de tekst?
+- Doe ik dat met order?
+- Van een volledig menu naar icoontjes en dat de style verandert, hoe werkt dat?
+
+
 
 
   ### Verslag van meeting
