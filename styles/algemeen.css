@@ -20,16 +20,19 @@
 
 @font-face {
   font-family: rijksmuseum;
-  src: url(/font/Rijksmuseum-Bold.woff2) format('woff2');
+  src: url(../font/Rijksmuseum-Bold.woff2) format('woff2');
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: rijksmuseum2;
-  src: url(/font/Rijksmuseum-Normal.woff2) format('woff2');
+  font-family: rijksmuseum;
+  src: url(.../font/Rijksmuseum-Normal.woff2) format('woff2');
+  font-weight: normal;
 }
 
 * {
-  font-family: 'rijksmuseum2', sans-serif;
+  font-family: 'rijksmuseum', sans-serif;
+  font-weight: bold;
   color: var(--color-text);
 }
 
@@ -37,29 +40,189 @@ body {
   background-color: var(--color-background);
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.skip {
+  position: absolute;
+  left: 0em;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 
 
 /*********************/
 /****** HEADER *******/
 /********************/
 
-ul {
+
+
+
+#nav-icon3 {
+  width: 3%;
+  height: 1.5vw;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  top: -1.5em;
+  left: 4.5em;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+
+}
+
+
+
+#nav-icon3 span:nth-child(4) {
+  top: 1.5em;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+
+/* menuuitklapding */
+
+
+
+header>a {
+  z-index: 100;
+}
+
+header>button {
+  z-index: 100;
+}
+
+
+header nav:first-of-type {
+  position: fixed;
+  inset: 0;
+  width: 50%;
+  transform: translateX(-100%);
+  transition: color .10s ease;
+  background-color: rgba(50, 50, 50);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 0s 1s;
+  padding-top: 3em;
+}
+
+header nav:first-of-type.open {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+
+
+/*********************/
+/****** HEADER *******/
+/********************/
+
+header {
+  background-image: url('../images/rijksmuseum.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 225vh;
+  height: 40em;
+  margin: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav:nth-of-type(2) ul {
   list-style-type: none;
   margin: 1em;
   display: flex;
 }
 
-li {
+nav:nth-of-type(2) li {
   position: relative;
 }
 
-li a {
+nav:nth-of-type(2) li a {
   text-decoration: none;
   padding: 1em;
   display: block;
 }
 
-nav ul li:nth-child(-n+3)::before {
+
+nav:nth-of-type(2) ul li:nth-child(-n+6)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -70,56 +233,79 @@ nav ul li:nth-child(-n+3)::before {
   transition: width 0.25s ease-out;
 }
 
-nav ul li:nth-child(-n+3):hover::before {
+nav:nth-of-type(2) ul li:nth-child(-n+6):hover::before {
   width: 100%;
 }
 
+nav:nth-of-type(2) ul li:nth-child(3) {
+  margin-right: 20em;
+}
 
-nav ul li:last-of-type {
+nav:nth-of-type(2) ul li:last-of-type {
   color: white;
   padding: 1, 5px 2, 5px;
   background-color: #D45444;
 }
 
-nav ul li:last-of-type:hover {
+header img:first-of-type {
+  width: 5vh;
+  position: relative;
+  top: 1.75em;
+  left: 1em;
+}
+
+nav:nth-of-type(2) ul li:last-of-type:hover {
   color: black;
   background-color: var(--blokje-title-color);
 
 }
 
-nav ul li:last-of-type {
+nav:nth-of-type(2) ul li:last-of-type {
   transition: color .3s ease, background-color .3s ease;
 }
 
-nav {
+nav:nth-of-type(2) {
   display: flex;
   justify-content: flex-end;
   border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-nav ul a {
+nav:nth-of-type(2) ul a {
   display: block;
 }
 
-nav ul li:nth-child(-n+3) {
+nav ul li:nth-child(-n+6) {
   display: none;
 }
 
 
+
 h1 {
-  font-size: 10em;
+  position: relative;
+  font-size: 12em;
   display: flex;
   margin-top: -0.2em;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+  z-index: 100;
 
-@media (width > 40em) {
-  nav ul li:nth-child(-n+3) {
-    display: block;
-  }
 }
+/*********************/
+/****** uhm idk wat ik aan het doen ben *******/
+/********************/
+
+
+header section
+ {  display: flex;
+  flex-direction: column;
+  left: 4em;
+ }
+
+
 
 /*********************/
 /****** FOOTER *******/
@@ -129,8 +315,7 @@ footer section:first-of-type {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2em;
-  padding-left: 0em;
+
 }
 
 footer section:first-of-type h4,
@@ -142,32 +327,33 @@ footer section:first-of-type p:nth-of-type(2) {
   margin-bottom: 1em;
 }
 
-footer section:nth-of-type(2) ul {
+footer div:first-of-type ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 0;
   padding: 0;
-
+  list-style: none;
 }
 
-footer section:nth-of-type(2) ul li {
+footer div:first-of-type ul li {
   margin-bottom: 1em;
 }
 
-footer section:nth-of-type(3) {
+footer div:nth-of-type(2) {
   margin-left: auto;
 }
 
-footer section:nth-of-type(3) article {
+footer div:nth-of-type(2) article {
   position: relative;
 
 }
 
-footer section:nth-of-type(3) article h5 {
+footer div:nth-of-type(2) article h5 {
   bottom: 6em;
   margin-top: 0.5em;
   right: 20em;
-  position: absolute;
   margin: 0;
   padding: .5em;
   color: white;
@@ -175,36 +361,36 @@ footer section:nth-of-type(3) article h5 {
   background-color: var(--blokje-title-background);
 }
 
-footer section:nth-of-type(3) article h5:nth-of-type(2) {
+footer div:nth-of-type(2) article h5:nth-of-type(2) {
   margin-top: 4em;
 
 }
 
-footer section:nth-of-type(3) article h5:hover {
+footer div:nth-of-type(2) article h5:hover {
   color: var(--blokje-title-background);
   background-color: var(--blokje-title-color);
 
 }
 
-footer section:nth-of-type(3) article h5 {
+footer div:nth-of-type(2) article h5 {
   transition: color 2s ease, background-color 2s ease;
 }
 
 /* footertje laatste deel */
-footer section:last-of-type ul {
+footer div:last-of-type ul {
   list-style-type: none;
   margin: 1em;
   display: flex;
 }
 
-footer section:last-of-type ul li {
+footer div:last-of-type ul li {
   position: relative;
   text-decoration: none;
   padding: 1em;
   display: block;
 }
 
-footer section:last-of-type ul li::before {
+footer div:last-of-type ul li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -215,13 +401,71 @@ footer section:last-of-type ul li::before {
   transition: width 0.25s ease-out;
 }
 
-footer section:last-of-type ul li:hover::before {
+footer div:last-of-type ul li:hover::before {
   width: 100%;
 }
 
-footer section:last-of-type {
+footer div:last-of-type {
   display: flex;
   justify-content: flex-end;
   border-radius: 50px;
+}
+
+
+
+@media (width > 40em) {
+  nav ul li:nth-child(-n+6) {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.5em;
+    /* Change to a single column layout */
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 600px) {
+  header img:first-of-type {
+    left: -8em;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #nav-icon3 span:nth-child(1) {
+    top: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav-icon3 span:nth-child(4) {
+    top: -0.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav-icon3 {
+    top: -1em;
+    left: 2em;
+    width: 6%
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  header nav:first-of-type {
+    width: 100%;
+  }
 }
 
