@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="jouw naam">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
@@ -17,84 +18,107 @@
 
 <body>
   <header>
+    <a href="#main" class="skip">Skip to main content</a>
+    <button id="nav-icon3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav>
       <ul>
+        <li><a href=".html">Inloggen</a></li>
+        <li><a href=".html">Giftshop</a></li>
+        <li><a href=".html">Rijksmuseum tickets</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <a><img src="./images/search.png" alt="link naar zoekbalk"></a>
+      <ul>
+        <li><a href="index.html">Bezoek</a></li>
+        <li><a href=".html">Stories</a></li>
+        <li><a href=".html">Rijksstudio</a></li>
         <li><a href="index.html">Language</a></li>
         <li><a href=".html">Inloggen</a></li>
         <li><a href=".html">Giftshop</a></li>
         <li><a href=".html">Rijksmuseum tickets</a></li>
       </ul>
     </nav>
+
     <h1>RIJKSMUSEUM</h1>
-    <h2>MUSEUM BOIJMANS VAN BEUNINGEN AT RIJKSMUSEUM</h2>
-    <p>Monet, Kusama, Dalí, Picasso, Mondriaan, Rubens</p>
+    <section>
+      <h2>MUSEUM BOIJMANS VAN BEUNINGEN AT RIJKSMUSEUM</h2>
+      <p>Monet, Kusama, Dalí, Picasso, Mondriaan, Rubens</p>
+    </section>
   </header>
-</body>
 
 
-<main>
 
-  <section>
-    <h2></h2>
+  <main id="main">
 
-    <article>
-      <h3>Dichter bij Vermeer</h3>
-      <img src="./images/vermeer.jpg" alt="Schilderij van Vermeer van een jongen met een hoed">
-    </article>
+    <section>
+      <h2></h2>
 
-    <article>
-      <h3>Toren van Babel</h3>
-      <img src="images/torenvanbabel.jpg" alt="Schilderij van de toren van Babel">
-    </article>
+      <article>
+        <h3>Dichter bij Vermeer</h3>
+        <img src="./images/vermeer.jpg" alt="Schilderij van Vermeer van een jongen met een hoed">
+      </article>
 
-    <article>
-      <h3>Dansende Shiva</h3>
-      <img src="images/dansendeShiva.png" alt="Foto van het beeld van de Dansende Shiva">
-    </article>
+      <article>
+        <h3>Toren van Babel</h3>
+        <img src="images/torenvanbabel.jpg" alt="Schilderij van de toren van Babel">
+      </article>
 
-    <article>
-      <h3>Adriaen Pietersz</h3>
-      <img src="images/dezielenvisserij.jpeg" alt="Schilderij van de zielen visserij">
-    </article>
+      <article>
+        <h3>Dansende Shiva</h3>
+        <img src="images/dansendeShiva.png" alt="Foto van het beeld van de Dansende Shiva">
+      </article>
 
-  </section>
-</main>
+      <article>
+        <h3>Adriaen Pietersz</h3>
+        <img src="images/dezielenvisserij.jpeg" alt="Schilderij van de zielen visserij">
+      </article>
 
-<footer>
-  <section>
-    <h4>BEZOEKERSINFORMATIE</h4>
-    <p>Elke dag van 9-17 uur</p>
-    <p>Museumstraat 1, Amsterdam</p>
-  </section>
+    </section>
+  </main>
 
-  <section>
-    <ul>
-      <li>Over ons</li>
-      <li>Pers</li>
-      <li>Werken bij</li>
-      <li>Contact</li>
-    </ul>
-  </section>
+  <footer>
+    <section>
+      <h4>BEZOEKERSINFORMATIE</h4>
+      <p>Elke dag van 9-17 uur</p>
+      <p>Museumstraat 1, Amsterdam</p>
+    </section>
 
-  <section>
-    <article>
-      <h5>Doneer ook</h5>
-      <h5>Nieuwsbrief</h5>
-    </article>
-  </section>
+    <div>
+      <ul>
+        <li>Over ons</li>
+        <li>Pers</li>
+        <li>Werken bij</li>
+        <li>Contact</li>
+      </ul>
+    </div>
 
-  <section>
-    <ul>
-      <li>Algemene voorwaarden</li>
-      <li>Privacy</li>
-      <li>Cookiebeleid</li>
-      <li>Herroepingsrecht</li>
-    </ul>
-  </section>
+    <div>
+      <article>
+        <h5>Doneer ook</h5>
+        <h5>Nieuwsbrief</h5>
+      </article>
+    </div>
 
-</footer>
+    <div>
+      <ul>
+        <li>Algemene voorwaarden</li>
+        <li>Privacy</li>
+        <li>Cookiebeleid</li>
+        <li>Herroepingsrecht</li>
+      </ul>
+    </div>
 
-<script defer src="scripts/script.js"></script>
+  </footer>
+
+  <script defer src="scripts/script.js"></script>
 </body>
 
 </html>
