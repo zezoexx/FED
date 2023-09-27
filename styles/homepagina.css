@@ -40,12 +40,12 @@ article img {
 }
 
 article img:hover {
-  transform: scale(1.02); /* Increase the scale factor for the desired zoom level */
+  transform: scale(1.02); 
 }
 
 @media (max-width: 600px) {
   section {
-    grid-template-columns: 1fr; /* Change to a single column layout */
+    grid-template-columns: 1fr; 
   }
   h3 {
     padding: 1em;
