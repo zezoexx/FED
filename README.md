@@ -226,6 +226,16 @@ Of moet ik er sections van maken?
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+zoë: 
+- hoe maak ik h5 responsive
+- hoe krijg ik mn nav als enige wat in beeld blijft en dat het dan scrolbaar is
+- wat kan ik als beste gebruiken om een img in mn footer te hebben
+- voor die images moet de link om h3 en img heen en kan ik die dan gwn leeg laten
+
+elisa: 
+
+lynn: 
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
