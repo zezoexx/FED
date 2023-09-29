@@ -214,8 +214,8 @@ Of moet ik er sections van maken?
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  hier dit ging goed: footer
+  dit was lastig: hamburger menu
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -233,8 +233,21 @@ zoë:
 - voor die images moet de link om h3 en img heen en kan ik die dan gwn leeg laten
 
 elisa: 
+- Hoe wordt de footer grid hetzelfde uitgelijnd als de grid erboven en dat de 1e kolom 2 blokken overneemt 
+- Hoe krijg ik de footerbottom goed onder elkaar bij de a en img
+- Hoe krijg ik de pijltjes gericht op bepaalde woorden doe ik dat met nth-child wordt het dan wel overzichtelijk?
+- Hoe werkt dat/wat bedoelen ze met skip link als je de website met controls gebruikt
+- Er zit geen video/audio in mijn website hoe doe ik het toegankelijkheid stukje van media, valt dat dan weg?
+- Moest ik in de nav wel nou 1 kopje uitwerken of was dit al goed?
 
 lynn: 
+- Hoe krijg je een werkende slideshow van images die in een grid staan?
+- Hoe zet ik tekst op een goede manier op een image?
+- Hoe krijg ik de h1 over mn grid?
+- De tekst loopt door uit de image, hoe krijg ik het naar de volgende regel (white-space: normal werkt niet)
+- Hoe doe je een searchbalk pop up, is dat hetzelfde als bij het hamburgermenu?
+- Op welke manier kan ik een gap krijgen tussen linkjes in mn navbar zonder margin?
+- Wanneer ik de screenreader aan zet op de officiële site leest ie ook het hamburgermenu op, terwijl die niet uitgeklapt is. Hetzelfde voor de 2e html pagina Sent from my - Hoe krijg ik mijn menu hetzelfde als het origineel qua positie?
 
 
   ### Verslag van meeting
