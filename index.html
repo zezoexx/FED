@@ -13,17 +13,13 @@
   <title>Rijksmuseum homepagina</title>
   <link href="./style/homepagina.css" rel="stylesheet">
   <link href="./style/algemeen.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
   <header>
     <a href="#main" class="skip">Skip to main content</a>
-    <button id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <button aria-label="menu" aria-expanded="false">
+      <img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" aria-hidden="true" />
     </button>
 
     <nav>
@@ -40,7 +36,7 @@
         <li><a href="index.html">Bezoek</a></li>
         <li><a href=".html">Stories</a></li>
         <li><a href=".html">Rijksstudio</a></li>
-        <li><a href="index.html">Language</a></li>
+        <li><a href="vermeer.html">Language</a></li>
         <li><a href=".html">Inloggen</a></li>
         <li><a href=".html">Giftshop</a></li>
         <li><a href=".html">Rijksmuseum tickets</a></li>
@@ -62,21 +58,25 @@
       <article>
         <h3>Dichter bij Vermeer</h3>
         <img src="./images/vermeer.jpg" alt="Schilderij van Vermeer van een jongen met een hoed">
+        <p>Replica's van Vermeer naar verpleeghuizen en seniorencomplexen</p>
       </article>
 
       <article>
         <h3>Toren van Babel</h3>
         <img src="images/torenvanbabel.jpg" alt="Schilderij van de toren van Babel">
+        <p>Jan Luyken, 1705</p>
       </article>
 
       <article>
         <h3>Dansende Shiva</h3>
         <img src="images/dansendeShiva.png" alt="Foto van het beeld van de Dansende Shiva">
+        <p>Bovennatuurlijke kracht en kennis</p>
       </article>
 
       <article>
         <h3>Adriaen Pietersz</h3>
         <img src="images/dezielenvisserij.jpeg" alt="Schilderij van de zielen visserij">
+        <p>De zielenvisserij, Adriaen Pietersz. van de Venne, 1614</p>
       </article>
 
     </section>
@@ -85,35 +85,60 @@
 
   <footer>
     <section>
-      <h4>BEZOEKERSINFORMATIE</h4>
+      <h2>BEZOEKERSINFORMATIE</h2>
       <p>Elke dag van 9-17 uur</p>
       <p>Museumstraat 1, Amsterdam</p>
     </section>
 
     <div>
       <ul>
-        <li>Over ons</li>
-        <li>Pers</li>
-        <li>Werken bij</li>
-        <li>Contact</li>
+        <a href="#"><li>Over ons</li></a>
+        <a href="#"><li>Pers</li></a>
+        <a href="#"><li>Werken bij</li></a>
+        <a href="#"><li>Contact</li></a>
       </ul>
     </div>
 
     <section>
-      <h5>Doneer ook</h5>
-      <h5>Nieuwsbrief</h5>
+      <div>
+        <ul>
+          <a href="#"><li>Doneer ook</li></a>
+          <a href="#"><li>Nieuwsbrief</li></a>
+        </ul>
+      </div>
+
+      <div>
+        <a href="#"><img src="./images/anbilogo.png" alt="afbeelding van het logo Anbi"></a>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#"></a><img src="./images/instagram.png" alt=""></a></li>
+          <li><a href="#"></a><img src="./images/twitter.png" alt=""></a></li>
+          <li><a href="#"></a><img src="./images/whatsapp.png" alt=""></a></li>
+          <li><a href="#"></a><img src="./images/pinterest.png" alt=""></a></li>
+          <li><a href="#"></a><img src="./images/facebook.png" alt=""></a></li>
+          <li><a href="#"></a><img src="./images/messenger.png" alt=""></a></li>
+        </ul>
+      </div>
+
     </section>
 
-    <section>
-      <img src="./images/anbilogo.png" alt="afbeelding van het logo Anbi">
-    </section>
     <div>
       <ul>
-        <li>Algemene voorwaarden</li>
-        <li>Privacy</li>
-        <li>Cookiebeleid</li>
-        <li>Herroepingsrecht</li>
+        <li><a href="#"><img src="./images/overheid.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/Philips_logo_new.svg.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/vrienden.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/ing-logo-white-1.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/kpn-logo-black-and-white.png" alt=""></a></li>
       </ul>
+      <ul>
+        <li><a href="#">Algemene voorwaarden</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookiebeleid</a></li>
+        <li><a href="#">Herroepingsrecht</a></li>
+      </ul>
+
     </div>
   </footer>
 
