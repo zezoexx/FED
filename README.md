@@ -59,7 +59,6 @@ Responsive design
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-- De pagina begint met "Menu, searchbalk, what's on" etc ipv van met een titel.
 - De afbeelding op de pagina worden niet automatisch op volgorde bekeken, je moet er
 eerst echt op klikken
 - Bij "what's on" begint hij met vertellen hoeveel items er zijn (1/1, 1/2) zonder het menu te openen en hij vertelt vervolgens ook niet welke events dit zijn.
