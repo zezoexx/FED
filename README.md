@@ -273,15 +273,27 @@ lynn:
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ Wel gelukt:
+ - Simpele slideshow
+ - lees meer/minder knoppen
+ - grid !
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Screenshot 2023-10-04 182103.png" width="375px" alt="top">
+   <img src="readme-images/Screenshot 2023-10-04 182231.png" width="375px" alt="top">
+   <img src="readme-images/Screenshot 2023-10-04 182257.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Niet gelukt: 
+-volledig responsive maken van mijn hamburger menu, ik kreeg de h1 niet op de goede plek
+-footer deels niet gelukt, kreeg de laatste twee ul's niet precies zoals op de officiele site,
+de rest van de footer ook lastig 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Screenshot 2023-10-04 182329.png" width="375px" alt="bummer">
+   <img src="readme-images/niet.png" width="375px" alt="bummer">
+<img src="readme-images/footer.png" width="375px" alt="bummer">
+
+
 </details>
 
 
@@ -297,8 +309,16 @@ lynn:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/w3css/w3css_slideshow.asp
+  2. https://www.w3schools.com/howto/howto_js_slideshow.asp
+  3. https://m.youtube.com/watch?time_continue=159&v=vnQNb9fXP9o&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2F&source_ve_path=MTM5MTE3LDI4NjY2&feature=emb_logo
+  4. https://www.w3schools.com/howto/howto_js_navbar_slide.asp
+  5. https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+  6. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/inset
+  8. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
+  9. https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08
+  10. https://icons8.com/icons/set/social-media--white
+  11. https://chat.openai.com/
 
 </details>
