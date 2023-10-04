@@ -1,27 +1,33 @@
+// hamburger menu 
+
 document.addEventListener("DOMContentLoaded", function () {
-  var eersteImagesButton = document.querySelector("header button");
-  var deNav = document.querySelector("header nav");
-
-  eersteImagesButton.addEventListener("click", function () {
-    if (eersteImagesButton.getAttribute("aria-expanded") === "false") {
-      eersteImagesButton.setAttribute("aria-expanded", "true");
-    } else {
-      eersteImagesButton.setAttribute("aria-expanded", "false");
-    }
+	var eersteImagesButton = document.querySelector("header button");
+	var deNav = document.querySelector("header nav");
+	var deTekst = document.querySelector("header section:last-of-type");
+	var Telefoonscherm = document.querySelector("h1");
+	var body = document.body;
+  
+	eersteImagesButton.addEventListener("click", function () {
+	  if (eersteImagesButton.getAttribute("aria-expanded") === "false") {
+		eersteImagesButton.setAttribute("aria-expanded", "true");
+		eersteImagesButton.querySelector("img").src = "https://assets.codepen.io/274456/ui-icon-cross.svg";
+	  } else {
+		eersteImagesButton.setAttribute("aria-expanded", "false");
+		eersteImagesButton.querySelector("img").src = "https://assets.codepen.io/274456/ui-icon-hamburger.svg";
+	  }
+  
+	  deNav.classList.toggle("open");
+	  body.classList.toggle('menu-open');
+	  deTekst.classList.toggle("tekst");
+	  Telefoonscherm.classList.toggle("telefoon");
+	});
   });
-
-  eersteImagesButton.addEventListener("click", function () {
-    deNav.classList.toggle("open");
-  });
-});
+  
 
 
 
 
-
-
-
-//hoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii tweede pagina
+// vermeer.html 1e en 2e sectie
 var button = document.querySelector("section:first-of-type button");
 
 button.addEventListener("click", function () {
@@ -52,39 +58,41 @@ button2.addEventListener("click", function () {
 	}
 });
 
-//////////////////////////////////hyieiaef
-var imageList = document.querySelector("main section:last-of-type ul");
-var prevButton = document.querySelector("main section:last-of-type button:first-of-type");
-var nextButton = document.querySelector("main section:last-of-type button:last-of-type");
 
+
+
+
+// vermeer.html slideshow
+var imageList = document.querySelector("main section:nth-of-type(3) ul");
+var prevButton = document.querySelector("main section:nth-of-type(3) button:first-of-type");
+var nextButton = document.querySelector("main section:nth-of-type(3) button:last-of-type");
 let currentIndex = 0;
 
-// Add event listeners to the "Next" and "Previous" buttons
+
 nextButton.addEventListener("click", () => {
-  currentIndex++;
-  scrollToImage(currentIndex);
+	currentIndex++;
+	scrollToImage(currentIndex);
 });
 
 prevButton.addEventListener("click", () => {
-  currentIndex--;
-  scrollToImage(currentIndex);
+	currentIndex--;
+	scrollToImage(currentIndex);
 });
 
-// Function to scroll to a specific image in the list
-function scrollToImage(index) {
-  const images = imageList.querySelectorAll("li");
-  
-  if (index < 0) {
-    currentIndex = 0;
-  } else if (index >= images.length) {
-    currentIndex = images.length - 1;
-  }
 
-  const targetImage = images[currentIndex];
-  imageList.scrollLeft = targetImage.offsetLeft;
+function scrollToImage(index) {
+	const images = imageList.querySelectorAll("li");
+
+	if (index < 0) {
+		currentIndex = 0;
+	} else if (index >= images.length) {
+		currentIndex = images.length - 1;
+	}
+
+	const targetImage = images[currentIndex];
+	imageList.scrollLeft = targetImage.offsetLeft;
 }
 
-// Optional: Automatically scroll to the first image on page load
 scrollToImage(currentIndex);
 
 
