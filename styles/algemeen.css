@@ -36,14 +36,14 @@
 
 @font-face {
   font-family: rijksmuseum;
-  src: url(../font/Rijksmuseum-Bold.woff2) format('woff2');
+  src: url(./Rijksmuseum-Bold.woff2) format('woff2');
   font-weight: bold;
 }
 
 
 @font-face {
   font-family: rijksmuseum;
-  src: url(.../font/Rijksmuseum-Normal.woff2) format('woff2');
+  src: url(./Rijksmuseum-Normal.woff2) format('woff2');
   font-weight: normal;
 }
 
