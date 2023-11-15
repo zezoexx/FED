@@ -293,6 +293,20 @@ de rest van de footer ook lastig
    <img src="readme-images/niet.png" width="375px" alt="bummer">
 <img src="readme-images/footer.png" width="375px" alt="bummer">
 
+ ### Dit ging goed/Heb ik geleerd: 
+ - Een deel van de slideshow deed niet wat er hoorde, dit heb ik opgelost
+ - Het grootste deel van de header/nav
+ - De hele footer
+ - Het grid op de main pagina
+ - Lees meer/minder had ik eerst met span, dat is nu opgelost
+
+
+  ### Dit was lastig/Is niet gelukt 2.0:
+herkansing:
+- Op de tweede pagina hoort er Rijksmuseum te staan wanneer het menu openklapt.
+- De slide show heeft een soort fade in/ fade out transition
+- Op het kleine scherm hoort de h1 in het open menu te staan, dit heb ik weggelaten.
+
 
 </details>
 
